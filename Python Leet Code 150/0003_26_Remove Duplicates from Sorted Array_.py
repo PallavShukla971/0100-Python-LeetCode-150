@@ -72,7 +72,7 @@ Medium
 Apply Operations to an Array
 Easy
 Sum of Distances
-Medium
+Medium.
 
 Solution Below
  """
