@@ -76,3 +76,16 @@ Medium.
 
 Solution Below
  """
+
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        l = 1
+        """ we have set the l = 1 as the first element will stay the same all the time"""
+        for r in range(1, len(nums)):
+            if nums[r] != nums[r-1]:
+                """ so we have set r to go from 1 to length and then compared r on every step(num) with the previous one"""
+                nums[l] = nums[r]
+                l += 1 """ increase l by one on every step """
+        return l
+        
